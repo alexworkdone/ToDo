@@ -1,0 +1,157 @@
+.btns {
+  position: relative;
+  margin: -8px;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.btns .btn {
+  margin: 8px;
+}
+
+.btn {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+
+  border-radius: calc(var(--border-radius) / 2);
+  border: 1px solid transparent;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+
+  transition: 0.3s;
+
+  overflow: hidden;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.btn svg {
+  fill: currentColor;
+}
+
+.btn:hover,
+.btn.active {
+  z-index: 10;
+}
+
+.btn.active {
+  cursor: default;
+}
+
+.btn[disabled],
+.btn.disabled {
+  background: transparent;
+  opacity: 0.3;
+  outline: none !important;
+  box-shadow: none !important;
+  pointer-events: none;
+}
+
+.btn[disabled]:focus-visible,
+.btn.disabled:focus-visible {
+  outline: none;
+}
+
+/* size */
+.btn-small {
+  padding: 4px 8px;
+  font-size: 12px;
+  min-height: 24px;
+}
+
+.btn-small svg {
+  height: 16px;
+}
+
+.btn-medium {
+  padding: 8px 12px;
+  font-size: 14px;
+  min-height: 32px;
+}
+
+.btn-medium svg {
+  height: 18px;
+}
+
+.btn-big {
+  padding: 12px 24px;
+  min-height: 42px;
+  font-size: 18px;
+}
+
+.btn-big svg {
+  height: 24px;
+}
+
+.btn-bigger {
+  padding: 16px 28px;
+  min-height: 50px;
+  font-size: 22px;
+}
+
+.btn-bigger svg {
+  height: 32px;
+}
+
+/* color */
+/* multicolor */
+.btn-multicolor,
+.btn-multicolor.invert:hover {
+  background: var(--multicolor);
+  color: var(--vt-c-black-soft);
+}
+
+.btn-multicolor:hover,
+.btn-multicolor.invert {
+  border-color: var(--multicolor);
+  background: transparent;
+  color: var(--multicolor);
+}
+
+/* white */
+.btn-white,
+.btn-white.invert:hover {
+  background: var(--vt-c-white-mute);
+  color: var(--vt-c-black-soft);
+}
+
+.btn-white:hover,
+.btn-white.invert {
+  border-color: var(--vt-c-white-mute);
+  background: transparent;
+  color: var(--vt-c-white-mute);
+}
+
+/* success */
+.btn-success,
+.btn-success.invert:hover {
+  background: var(--success);
+  color: var(--vt-c-black-soft);
+}
+
+.btn-success:hover,
+.btn-success.invert {
+  border-color: var(--success);
+  background: transparent;
+  color: var(--success);
+}
+
+/* danger */
+.btn-danger,
+.btn-danger.invert:hover {
+  background: var(--danger);
+  color: var(--vt-c-black-soft);
+}
+
+.btn-danger:hover,
+.btn-danger.invert {
+  border-color: var(--danger);
+  background: transparent;
+  color: var(--danger);
+}

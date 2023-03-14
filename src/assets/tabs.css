@@ -1,0 +1,24 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab-buttons button {
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.tab-buttons button.active {
+  background-color: var(--multicolor);
+  color: var(--vt-c-black-soft);
+}
+
+.tab-content {
+  margin-top: 10px;
+}
